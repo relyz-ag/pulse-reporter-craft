@@ -20,3 +20,5 @@ Then `composer update relyz-ag/pulse-reporter-craft`, `php craft plugin/install 
 
 1. Set `PULSE_TOKEN` in production to the project's token from Pulse. Without it the endpoint answers `404`.
 2. In Pulse, set the report endpoint URL to `https://<craft-domain>/actions/pulse-reporter/report` (headless: the backend domain) and click **Test reporter**.
+
+If the test shows `401` with the right token, Apache is dropping the `Authorization` header. Add `CGIPassAuth On` to `web/.htaccess`.

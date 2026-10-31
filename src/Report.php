@@ -13,7 +13,7 @@ final class Report
 {
     public const NAME = 'reporter-craft';
     // Checked against the release tag.
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.0.1';
     public const CONTRACT_VERSION = 1;
 
     /**
